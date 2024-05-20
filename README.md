@@ -5,6 +5,12 @@
 
 > **_NOTE:_**  This project has come to an end! Currently efforts are in place to translate some of these nodes or the principle of them to the [crazyswarm2 project](https://github.com/IMRCLab/crazyswarm2), which will be eventually be published to be the official Crazyflie2 ROS package. 
 
+Joystick Installation:
+sudo apt-get install joystick ros-humble-joy-linux
+jstest /dev/input/js0
+ros2 run joy_linux joy_linux_node
+ros2 topic echo /joy
+
 This is my Bitcraze Summer project of 2022! Purpose: To use ROS2 to implement SLAM and navigation with the [Crazyflie](https://www.bitcraze.io/products/crazyflie-2-1/), [Flow deck](https://www.bitcraze.io/products/flow-deck-v2/) and [Multiranger](https://www.bitcraze.io/products/multi-ranger-deck/), on both the real drone and simulation. 
 
 This is very much in progress but I'm excited to work on this and very confident that this will work at the end. Also this is a good opertunity for me to show an ROS2 implementation of a new platform from scratch, so why not start with the Crazyflie :)
@@ -16,6 +22,13 @@ See this [Blogpost](https://www.bitcraze.io/2022/07/crazyflie-summer-project-wit
 - [Current Status](#current-status)
 - [How to run](#how-to-run)
 - [Planning](#planning)
+
+## Compilation
+colcon build --symlink-install --executor sequential --event-handlers console_direct+ --cmake-args -DBUILD_TESTING=OFF
+
+note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
 
 ## Goal Project
 
