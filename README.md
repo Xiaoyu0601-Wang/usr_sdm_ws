@@ -5,11 +5,12 @@
 
 > **_NOTE:_**  This project has come to an end! Currently efforts are in place to translate some of these nodes or the principle of them to the [crazyswarm2 project](https://github.com/IMRCLab/crazyswarm2), which will be eventually be published to be the official Crazyflie2 ROS package. 
 
-Joystick Installation: \\
-sudo apt-get install joystick ros-humble-joy-linux \\
-jstest /dev/input/js0 \\
-ros2 run joy_linux joy_linux_node \\
-ros2 topic echo /joy
+Joystick Installation:
+
+    sudo apt-get install joystick ros-humble-joy-linux
+    jstest /dev/input/js0
+    ros2 run joy_linux joy_linux_node
+    ros2 topic echo /joy
 
 This is my Bitcraze Summer project of 2022! Purpose: To use ROS2 to implement SLAM and navigation with the [Crazyflie](https://www.bitcraze.io/products/crazyflie-2-1/), [Flow deck](https://www.bitcraze.io/products/flow-deck-v2/) and [Multiranger](https://www.bitcraze.io/products/multi-ranger-deck/), on both the real drone and simulation. 
 
