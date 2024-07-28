@@ -1,5 +1,4 @@
-# [WIP]
-Based on Crazyflie ROS2, this repository is under construction.
+# [WIP] Based on Crazyflie ROS2, this repository is under construction.
 
 ![header](header.png)
 
